@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profile xmlns="http://soap.sforce.com/2006/04/metadata">
+    <custom>false</custom>
+    <layoutAssignments>
+        <layout>Account-Account %28MO%29</layout>
+    </layoutAssignments>
+
+    <layoutAssignments>
+        <layout>TR1__Closing_Report__c-Consulting %28MO%29</layout>
+        <recordType>TR1__Closing_Report__c.TR1__Consulting</recordType>
+    </layoutAssignments>
+
+    <layoutAssignments>
+        <layout>MO_Closing_Report_Rate__c-Allowance Rate %28MO%29</layout>
+        <recordType>MO_Closing_Report_Rate__c.MO_Allowance_Rate</recordType>
+    </layoutAssignments>
+    <!-- <layoutAssignments>
+        <layout>MO_Closing_Report_Rate__c-Allowance Rate %28MO%29</layout>
+        <recordType>MO_Closing_Report_Rate__c.MO_Allowance_Rate_Draft</recordType>
+    </layoutAssignments> -->
+
+    <layoutAssignments>
+        <layout>MO_Closing_Report_Rate__c-Basic Rate %28MO%29</layout>
+        <recordType>MO_Closing_Report_Rate__c.MO_Basic_Rate</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MO_Closing_Report_Rate__c-Basic Rate %28MO%29</layout>
+        <recordType>MO_Closing_Report_Rate__c.MO_Basic_Rate_Draft</recordType>
+    </layoutAssignments>
+
+    <layoutAssignments>
+        <layout>MO_Closing_Report_Rate__c-Expense Rate %28MO%29</layout>
+        <recordType>MO_Closing_Report_Rate__c.MO_Expense_Rate</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MO_Closing_Report_Rate__c-Expense Rate %28MO%29</layout>
+        <recordType>MO_Closing_Report_Rate__c.MO_Expense_Rate_Draft</recordType>
+    </layoutAssignments>
+
+    <layoutAssignments>
+        <layout>MO_Closing_Report_Rate__c-Other Rate %28MO%29</layout>
+        <recordType>MO_Closing_Report_Rate__c.MO_Other_Rate</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MO_Closing_Report_Rate__c-Other Rate %28MO%29</layout>
+        <recordType>MO_Closing_Report_Rate__c.MO_Other_Rate_Draft</recordType>
+    </layoutAssignments>
+
+    <layoutAssignments>
+        <layout>MO_Rate__c-Allowance Rate %28MO%29</layout>
+        <recordType>MO_Rate__c.MO_Allowance_Rate</recordType>
+    </layoutAssignments>
+    <!-- <layoutAssignments>
+        <layout>MO_Rate__c-Allowance Rate %28MO%29</layout>
+        <recordType>MO_Rate__c.MO_Allowance_Rate_Draft</recordType>
+    </layoutAssignments> -->
+
+    <layoutAssignments>
+        <layout>MO_Rate__c-Basic Rate %28MO%29</layout>
+        <recordType>MO_Rate__c.MO_Basic_Rate</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MO_Rate__c-Basic Rate %28MO%29</layout>
+        <recordType>MO_Rate__c.MO_Basic_Rate_Draft</recordType>
+    </layoutAssignments>
+
+    <layoutAssignments>
+        <layout>MO_Rate__c-Expense Rate %28MO%29</layout>
+        <recordType>MO_Rate__c.MO_Expense_Rate</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MO_Rate__c-Expense Rate %28MO%29</layout>
+        <recordType>MO_Rate__c.MO_Expense_Rate_Draft</recordType>
+    </layoutAssignments>
+
+    <layoutAssignments>
+        <layout>MO_Rate__c-Other Rate %28MO%29</layout>
+        <recordType>MO_Rate__c.MO_Other_Rate</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MO_Rate__c-Other Rate %28MO%29</layout>
+        <recordType>MO_Rate__c.MO_Other_Rate_Draft</recordType>
+    </layoutAssignments>
+
+    <tabVisibilities>
+        <tab>TR1__Agreement__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>TR1__Closing_Report__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>TR1__Job__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Account</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <userLicense>Salesforce</userLicense>
+</Profile>
