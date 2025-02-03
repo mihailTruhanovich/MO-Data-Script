@@ -162,14 +162,38 @@ Date startDate = Date.today();
 Id basicRecordTypeId = Schema.SObjectType.MO_Rate__c.getRecordTypeInfosByDeveloperName().get('MO_Basic_Rate').getRecordTypeId();
 Id otherRecordTypeId = Schema.SObjectType.MO_Rate__c.getRecordTypeInfosByDeveloperName().get('MO_Other_Rate').getRecordTypeId();
 Id expenseRecordTypeId = Schema.SObjectType.MO_Rate__c.getRecordTypeInfosByDeveloperName().get('MO_Expense_Rate').getRecordTypeId();
+
+Map<Id,bullhorn__MO_Compensation_Type_Set__c> groupByRateBundleId = new Map<Id,bullhorn__MO_Compensation_Type_Set__c>();
+for (MO_Rate_Bundle__c rateBundle : rateBundles) {
+    groupByRateBundleId.put(
+        rateBundle.Id,
+        new bullhorn__MO_Compensation_Type_Set__c(
+            Name__c = 'Group name',
+            Rate_Bundle__c = rateBundle.Id
+        )
+    );
+}
+insert groupByRateBundleId.values();
+
 for (MO_Rate_Bundle__c rateBundle : rateBundles) {
     MO_Rate__c otherRate = new MO_Rate__c(
+        bullhorn__Type__c  = 'All',
         RecordTypeId = otherRecordTypeId,
         Start_Date__c = startDate,
         Charge_Rate_Percent__c = 5,
         Pay_Rate__c = payRate,
         Rate_Bundle__c = rateBundle.Id,
         Name__c = 'Other rate'
+    );
+    MO_Rate__c otherRateGroup = new MO_Rate__c(
+        bullhorn__Type__c  = 'All',
+        RecordTypeId = otherRecordTypeId,
+        Start_Date__c = startDate,
+        Charge_Rate_Percent__c = 5,
+        Pay_Rate__c = payRate,
+        Rate_Bundle__c = rateBundle.Id,
+        Interpretation_Grouping__c = groupByRateBundleId.get(rateBundle.Id).Id,
+        Name__c = 'Other rate group'
     );
     MO_Rate__c expenseRate = new MO_Rate__c(
         RecordTypeId = expenseRecordTypeId,
@@ -194,7 +218,9 @@ for (MO_Rate_Bundle__c rateBundle : rateBundles) {
         rates.add(rate);
     }
     otherRate.End_Date__c = startDate.addDays(-1);
+    otherRateGroup.End_Date__c = startDate.addDays(-1);
     rates.add(otherRate);
+    rates.add(otherRateGroup);
     rates.add(expenseRate);
     payRate = 10;
 }
