@@ -82,6 +82,40 @@
         <recordType>MO_Rate__c.MO_Other_Rate_Draft</recordType>
     </layoutAssignments>
 
+    <layoutAssignments>
+        <layout>MO_Rate_Attribute_Catalogue__c-Rate Attribute Catalogue Divisor %28MO%29</layout>
+        <recordType>MO_Rate_Attribute_Catalogue__c.Divisor</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MO_Rate_Attribute_Catalogue__c-Rate Attribute Catalogue Job Level %28MO%29</layout>
+        <recordType>MO_Rate_Attribute_Catalogue__c.Job_Level</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MO_Rate_Attribute_Catalogue__c-Rate Attribute Catalogue Pay Element %28MO%29</layout>
+        <recordType>MO_Rate_Attribute_Catalogue__c.Pay_Element</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MO_Rate_Attribute_Catalogue__c-Rate Attribute Catalogue Sub Level %28MO%29</layout>
+        <recordType>MO_Rate_Attribute_Catalogue__c.Sub_Level</recordType>
+    </layoutAssignments>
+
+    <layoutAssignments>
+        <layout>MO_Rate_Attribute_Catalogue_Entry__c-Rate Attribute Catalogue Entry Divisor %28MO%29</layout>
+        <recordType>MO_Rate_Attribute_Catalogue_Entry__c.Divisor</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MO_Rate_Attribute_Catalogue_Entry__c-Rate Attribute Catalogue Entry Job Level %28MO%29</layout>
+        <recordType>MO_Rate_Attribute_Catalogue_Entry__c.Job_Level</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MO_Rate_Attribute_Catalogue_Entry__c-Rate Attribute Catalogue Entry Pay Element %28MO%29</layout>
+        <recordType>MO_Rate_Attribute_Catalogue_Entry__c.Pay_Element</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MO_Rate_Attribute_Catalogue_Entry__c-Rate Attribute Catalogue Entry Sub Level %28MO%29</layout>
+        <recordType>MO_Rate_Attribute_Catalogue_Entry__c.Sub_Level</recordType>
+    </layoutAssignments>
+
     <tabVisibilities>
         <tab>TR1__Agreement__c</tab>
         <visibility>DefaultOn</visibility>
