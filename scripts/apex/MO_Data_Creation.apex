@@ -18,6 +18,19 @@ for (String recordTypeName : cataloguesByRecordTypeNames.keySet()) {
 }
 insert cataloguesByRecordTypeNames.values();
 
+Map<Id,MO_Rate_Attribute_Catalogue_Scope__c> RACScopesByRACId = new Map<Id,MO_Rate_Attribute_Catalogue_Scope__c>();
+
+for (MO_Rate_Attribute_Catalogue__c catalogue : cataloguesByRecordTypeNames.values()) {
+    RACScopesByRACId.put(
+        catalogue.Id,
+        new MO_Rate_Attribute_Catalogue_Scope__c(
+            Name = catalogue.Name + ' Scope',
+            Catalogue__c = catalogue.Id
+        )
+    );
+}
+insert RACScopesByRACId.values();
+
 
 List<MO_Rate_Attribute_Catalogue_Entry__c> entries = new List<MO_Rate_Attribute_Catalogue_Entry__c>();
 for (String recordTypeName : cataloguesByRecordTypeNames.keySet()) {
@@ -30,6 +43,12 @@ for (String recordTypeName : cataloguesByRecordTypeNames.keySet()) {
     entries.add(new MO_Rate_Attribute_Catalogue_Entry__c(
         Name = recordTypeName + ' Two',
         RecordTypeId = entryRecordTypeId,
+        Catalogue__c = cataloguesByRecordTypeNames.get(recordTypeName).Id
+    ));
+    entries.add(new MO_Rate_Attribute_Catalogue_Entry__c(
+        Name = recordTypeName + ' Scope',
+        RecordTypeId = entryRecordTypeId,
+        Rate_Attribute_Catalogue_Scope__c = RACScopesByRACId.get(cataloguesByRecordTypeNames.get(recordTypeName).Id).Id,
         Catalogue__c = cataloguesByRecordTypeNames.get(recordTypeName).Id
     ));
 }
