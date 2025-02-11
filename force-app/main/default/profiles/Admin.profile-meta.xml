@@ -16,7 +16,7 @@
     </layoutAssignments>
 
     <layoutAssignments>
-        <layout>TR1__Closing_Report__c-Consulting %28MO%29</layout>
+        <layout>TR1__Closing_Report__c-bullhorn__Consulting %28MO%29</layout>
         <recordType>TR1__Closing_Report__c.TR1__Consulting</recordType>
     </layoutAssignments>
 
