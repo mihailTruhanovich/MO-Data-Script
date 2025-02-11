@@ -131,6 +131,7 @@
     <tabs>MO_Finance_Connect</tabs>
     <tabs>MO_Payroll_Connect</tabs>
     <tabs>MO_Configuration_Setup</tabs>
+    <tabs>MO_Change_Request__c</tabs>
     <tabs>MO_Contract__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>
