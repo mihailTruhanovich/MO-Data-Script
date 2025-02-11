@@ -2,7 +2,17 @@
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <custom>false</custom>
     <layoutAssignments>
-        <layout>Account-Account %28MO%29</layout>
+        <layout>Account-bullhorn__Account %28MO%29</layout>
+    </layoutAssignments>
+
+    <layoutAssignments>
+        <layout>bullhorn__MO_Invoice_Line_Item__c-bullhorn__Invoice Line Item Layout %28MO%29</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>bullhorn__MO_Invoice__c-bullhorn__Invoice Layout %28MO%29</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>TR1__Milestone__c-bullhorn__Milestone Perm Billing Layout %28MO%29</layout>
     </layoutAssignments>
 
     <layoutAssignments>
@@ -11,109 +21,110 @@
     </layoutAssignments>
 
     <layoutAssignments>
-        <layout>MO_Closing_Report_Rate__c-Allowance Rate %28MO%29</layout>
-        <recordType>MO_Closing_Report_Rate__c.MO_Allowance_Rate</recordType>
+        <layout>bullhorn__MO_Closing_Report_Rate__c-bullhorn__Allowance Rate %28MO%29</layout>
+        <recordType>bullhorn__MO_Closing_Report_Rate__c.bullhorn__MO_Allowance_Rate</recordType>
+    </layoutAssignments>
+
+    <layoutAssignments>
+        <layout>TR1__Job__c-bullhorn__Permanent %28MO%29</layout>
+        <recordType>TR1__Job__c.TR1__Permanent</recordType>
+    </layoutAssignments>
+
+    <layoutAssignments>
+        <layout>bullhorn__MO_Closing_Report_Rate__c-bullhorn__Basic Rate %28MO%29</layout>
+        <recordType>bullhorn__MO_Closing_Report_Rate__c.bullhorn__MO_Basic_Rate</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>bullhorn__MO_Closing_Report_Rate__c-bullhorn__Basic Rate %28MO%29</layout>
+        <recordType>bullhorn__MO_Closing_Report_Rate__c.bullhorn__MO_Basic_Rate_Draft</recordType>
+    </layoutAssignments>
+
+    <layoutAssignments>
+        <layout>bullhorn__MO_Closing_Report_Rate__c-bullhorn__Expense Rate %28MO%29</layout>
+        <recordType>bullhorn__MO_Closing_Report_Rate__c.bullhorn__MO_Expense_Rate</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>bullhorn__MO_Closing_Report_Rate__c-bullhorn__Expense Rate %28MO%29</layout>
+        <recordType>bullhorn__MO_Closing_Report_Rate__c.bullhorn__MO_Expense_Rate_Draft</recordType>
+    </layoutAssignments>
+
+    <layoutAssignments>
+        <layout>bullhorn__MO_Closing_Report_Rate__c-bullhorn__Other Rate %28MO%29</layout>
+        <recordType>bullhorn__MO_Closing_Report_Rate__c.bullhorn__MO_Other_Rate</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>bullhorn__MO_Closing_Report_Rate__c-bullhorn__Other Rate %28MO%29</layout>
+        <recordType>bullhorn__MO_Closing_Report_Rate__c.bullhorn__MO_Other_Rate_Draft</recordType>
+    </layoutAssignments>
+
+    <layoutAssignments>
+        <layout>bullhorn__MO_Rate__c-bullhorn__Allowance Rate %28MO%29</layout>
+        <recordType>bullhorn__MO_Rate__c.bullhorn__MO_Allowance_Rate</recordType>
     </layoutAssignments>
     <!-- <layoutAssignments>
-        <layout>MO_Closing_Report_Rate__c-Allowance Rate %28MO%29</layout>
-        <recordType>MO_Closing_Report_Rate__c.MO_Allowance_Rate_Draft</recordType>
+        <layout>bullhorn__MO_Rate__c-bullhorn__Allowance Rate %28MO%29</layout>
+        <recordType>bullhorn__MO_Rate__c.bullhorn__MO_Allowance_Rate_Draft</recordType>
     </layoutAssignments> -->
 
     <layoutAssignments>
-        <layout>MO_Closing_Report_Rate__c-Basic Rate %28MO%29</layout>
-        <recordType>MO_Closing_Report_Rate__c.MO_Basic_Rate</recordType>
+        <layout>bullhorn__MO_Rate__c-bullhorn__Basic Rate %28MO%29</layout>
+        <recordType>bullhorn__MO_Rate__c.bullhorn__MO_Basic_Rate</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>MO_Closing_Report_Rate__c-Basic Rate %28MO%29</layout>
-        <recordType>MO_Closing_Report_Rate__c.MO_Basic_Rate_Draft</recordType>
-    </layoutAssignments>
-
-    <layoutAssignments>
-        <layout>MO_Closing_Report_Rate__c-Expense Rate %28MO%29</layout>
-        <recordType>MO_Closing_Report_Rate__c.MO_Expense_Rate</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>MO_Closing_Report_Rate__c-Expense Rate %28MO%29</layout>
-        <recordType>MO_Closing_Report_Rate__c.MO_Expense_Rate_Draft</recordType>
+        <layout>bullhorn__MO_Rate__c-bullhorn__Basic Rate %28MO%29</layout>
+        <recordType>bullhorn__MO_Rate__c.bullhorn__MO_Basic_Rate_Draft</recordType>
     </layoutAssignments>
 
     <layoutAssignments>
-        <layout>MO_Closing_Report_Rate__c-Other Rate %28MO%29</layout>
-        <recordType>MO_Closing_Report_Rate__c.MO_Other_Rate</recordType>
+        <layout>bullhorn__MO_Rate__c-bullhorn__Expense Rate %28MO%29</layout>
+        <recordType>bullhorn__MO_Rate__c.bullhorn__MO_Expense_Rate</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>MO_Closing_Report_Rate__c-Other Rate %28MO%29</layout>
-        <recordType>MO_Closing_Report_Rate__c.MO_Other_Rate_Draft</recordType>
-    </layoutAssignments>
-
-    <layoutAssignments>
-        <layout>MO_Rate__c-Allowance Rate %28MO%29</layout>
-        <recordType>MO_Rate__c.MO_Allowance_Rate</recordType>
-    </layoutAssignments>
-    <!-- <layoutAssignments>
-        <layout>MO_Rate__c-Allowance Rate %28MO%29</layout>
-        <recordType>MO_Rate__c.MO_Allowance_Rate_Draft</recordType>
-    </layoutAssignments> -->
-
-    <layoutAssignments>
-        <layout>MO_Rate__c-Basic Rate %28MO%29</layout>
-        <recordType>MO_Rate__c.MO_Basic_Rate</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>MO_Rate__c-Basic Rate %28MO%29</layout>
-        <recordType>MO_Rate__c.MO_Basic_Rate_Draft</recordType>
+        <layout>bullhorn__MO_Rate__c-bullhorn__Expense Rate %28MO%29</layout>
+        <recordType>bullhorn__MO_Rate__c.bullhorn__MO_Expense_Rate_Draft</recordType>
     </layoutAssignments>
 
     <layoutAssignments>
-        <layout>MO_Rate__c-Expense Rate %28MO%29</layout>
-        <recordType>MO_Rate__c.MO_Expense_Rate</recordType>
+        <layout>bullhorn__MO_Rate__c-bullhorn__Other Rate %28MO%29</layout>
+        <recordType>bullhorn__MO_Rate__c.bullhorn__MO_Other_Rate</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>MO_Rate__c-Expense Rate %28MO%29</layout>
-        <recordType>MO_Rate__c.MO_Expense_Rate_Draft</recordType>
-    </layoutAssignments>
-
-    <layoutAssignments>
-        <layout>MO_Rate__c-Other Rate %28MO%29</layout>
-        <recordType>MO_Rate__c.MO_Other_Rate</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>MO_Rate__c-Other Rate %28MO%29</layout>
-        <recordType>MO_Rate__c.MO_Other_Rate_Draft</recordType>
+        <layout>bullhorn__MO_Rate__c-bullhorn__Other Rate %28MO%29</layout>
+        <recordType>bullhorn__MO_Rate__c.bullhorn__MO_Other_Rate_Draft</recordType>
     </layoutAssignments>
 
     <layoutAssignments>
-        <layout>MO_Rate_Attribute_Catalogue__c-Rate Attribute Catalogue Divisor %28MO%29</layout>
-        <recordType>MO_Rate_Attribute_Catalogue__c.Divisor</recordType>
+        <layout>bullhorn__MO_Rate_Attribute_Catalogue__c-bullhorn__Rate Attribute Catalogue Divisor %28MO%29</layout>
+        <recordType>bullhorn__MO_Rate_Attribute_Catalogue__c.bullhorn__Divisor</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>MO_Rate_Attribute_Catalogue__c-Rate Attribute Catalogue Job Level %28MO%29</layout>
-        <recordType>MO_Rate_Attribute_Catalogue__c.Job_Level</recordType>
+        <layout>bullhorn__MO_Rate_Attribute_Catalogue__c-bullhorn__Rate Attribute Catalogue Job Level %28MO%29</layout>
+        <recordType>bullhorn__MO_Rate_Attribute_Catalogue__c.bullhorn__Job_Level</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>MO_Rate_Attribute_Catalogue__c-Rate Attribute Catalogue Pay Element %28MO%29</layout>
-        <recordType>MO_Rate_Attribute_Catalogue__c.Pay_Element</recordType>
+        <layout>bullhorn__MO_Rate_Attribute_Catalogue__c-bullhorn__Rate Attribute Catalogue Pay Element %28MO%29</layout>
+        <recordType>bullhorn__MO_Rate_Attribute_Catalogue__c.bullhorn__Pay_Element</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>MO_Rate_Attribute_Catalogue__c-Rate Attribute Catalogue Sub Level %28MO%29</layout>
-        <recordType>MO_Rate_Attribute_Catalogue__c.Sub_Level</recordType>
+        <layout>bullhorn__MO_Rate_Attribute_Catalogue__c-bullhorn__Rate Attribute Catalogue Sub Level %28MO%29</layout>
+        <recordType>bullhorn__MO_Rate_Attribute_Catalogue__c.bullhorn__Sub_Level</recordType>
     </layoutAssignments>
 
     <layoutAssignments>
-        <layout>MO_Rate_Attribute_Catalogue_Entry__c-Rate Attribute Catalogue Entry Divisor %28MO%29</layout>
-        <recordType>MO_Rate_Attribute_Catalogue_Entry__c.Divisor</recordType>
+        <layout>bullhorn__MO_Rate_Attribute_Catalogue_Entry__c-bullhorn__Rate Attribute Catalogue Entry Divisor %28MO%29</layout>
+        <recordType>bullhorn__MO_Rate_Attribute_Catalogue_Entry__c.bullhorn__Divisor</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>MO_Rate_Attribute_Catalogue_Entry__c-Rate Attribute Catalogue Entry Job Level %28MO%29</layout>
-        <recordType>MO_Rate_Attribute_Catalogue_Entry__c.Job_Level</recordType>
+        <layout>bullhorn__MO_Rate_Attribute_Catalogue_Entry__c-bullhorn__Rate Attribute Catalogue Entry Job Level %28MO%29</layout>
+        <recordType>bullhorn__MO_Rate_Attribute_Catalogue_Entry__c.bullhorn__Job_Level</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>MO_Rate_Attribute_Catalogue_Entry__c-Rate Attribute Catalogue Entry Pay Element %28MO%29</layout>
-        <recordType>MO_Rate_Attribute_Catalogue_Entry__c.Pay_Element</recordType>
+        <layout>bullhorn__MO_Rate_Attribute_Catalogue_Entry__c-bullhorn__Rate Attribute Catalogue Entry Pay Element %28MO%29</layout>
+        <recordType>bullhorn__MO_Rate_Attribute_Catalogue_Entry__c.bullhorn__Pay_Element</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>MO_Rate_Attribute_Catalogue_Entry__c-Rate Attribute Catalogue Entry Sub Level %28MO%29</layout>
-        <recordType>MO_Rate_Attribute_Catalogue_Entry__c.Sub_Level</recordType>
+        <layout>bullhorn__MO_Rate_Attribute_Catalogue_Entry__c-bullhorn__Rate Attribute Catalogue Entry Sub Level %28MO%29</layout>
+        <recordType>bullhorn__MO_Rate_Attribute_Catalogue_Entry__c.bullhorn__Sub_Level</recordType>
     </layoutAssignments>
 
     <tabVisibilities>
