@@ -196,7 +196,7 @@ insert groupByRateBundleId.values();
 
 for (MO_Rate_Bundle__c rateBundle : rateBundles) {
     MO_Rate__c otherRate = new MO_Rate__c(
-        bullhorn__Type__c  = 'Overtime',
+        bullhorn__Time_Categories__c   = 'Overtime',
         RecordTypeId = otherRecordTypeId,
         Start_Date__c = startDate,
         Charge_Rate_Percent__c = 5,
@@ -205,7 +205,7 @@ for (MO_Rate_Bundle__c rateBundle : rateBundles) {
         Name__c = 'Other rate'
     );
     MO_Rate__c otherRateGroup = new MO_Rate__c(
-        bullhorn__Type__c  = 'Overtime',
+        bullhorn__Time_Categories__c   = 'Overtime',
         RecordTypeId = otherRecordTypeId,
         Start_Date__c = startDate,
         Charge_Rate_Percent__c = 5,
