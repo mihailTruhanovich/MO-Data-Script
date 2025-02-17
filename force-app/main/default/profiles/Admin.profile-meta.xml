@@ -20,14 +20,18 @@
         <recordType>TR1__Closing_Report__c.TR1__Consulting</recordType>
     </layoutAssignments>
 
-    <!-- <layoutAssignments>
-        <layout>bullhorn__MO_Closing_Report_Rate__c-bullhorn__Allowance Rate %28MO%29</layout>
-        <recordType>bullhorn__MO_Closing_Report_Rate__c.bullhorn__MO_Allowance_Rate</recordType>
-    </layoutAssignments> -->
-
     <layoutAssignments>
         <layout>TR1__Job__c-bullhorn__Permanent %28MO%29</layout>
         <recordType>TR1__Job__c.TR1__Permanent</recordType>
+    </layoutAssignments>
+
+    <layoutAssignments>
+        <layout>bullhorn__MO_Closing_Report_Rate__c-bullhorn__Allowance Rate %28MO%29</layout>
+        <recordType>bullhorn__MO_Closing_Report_Rate__c.bullhorn__MO_Allowance_Rate</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>bullhorn__MO_Closing_Report_Rate__c-bullhorn__Allowance Rate %28MO%29</layout>
+        <recordType>bullhorn__MO_Closing_Report_Rate__c.bullhorn__MO_Allowance_Rate_Draft</recordType>
     </layoutAssignments>
 
     <layoutAssignments>
@@ -57,14 +61,14 @@
         <recordType>bullhorn__MO_Closing_Report_Rate__c.bullhorn__MO_Other_Rate_Draft</recordType>
     </layoutAssignments>
 
-    <!-- <layoutAssignments>
+    <layoutAssignments>
         <layout>bullhorn__MO_Rate__c-bullhorn__Allowance Rate %28MO%29</layout>
         <recordType>bullhorn__MO_Rate__c.bullhorn__MO_Allowance_Rate</recordType>
-    </layoutAssignments> -->
-    <!-- <layoutAssignments>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>bullhorn__MO_Rate__c-bullhorn__Allowance Rate %28MO%29</layout>
         <recordType>bullhorn__MO_Rate__c.bullhorn__MO_Allowance_Rate_Draft</recordType>
-    </layoutAssignments> -->
+    </layoutAssignments>
 
     <layoutAssignments>
         <layout>bullhorn__MO_Rate__c-bullhorn__Basic Rate %28MO%29</layout>
