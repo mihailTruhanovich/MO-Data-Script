@@ -11,3 +11,4 @@ set ORG_ALIAS=%1
 call sf project deploy start -c -o %ORG_ALIAS%
 call sf apex run -f scripts/apex/initiateConfig.apex -o %ORG_ALIAS%
 call sf apex run -f scripts/apex/MO_Data_Creation.apex -o %ORG_ALIAS%
+call sf apex run -f scripts/apex/createClosingReports.apex -o %ORG_ALIAS%

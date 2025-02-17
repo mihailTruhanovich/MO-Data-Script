@@ -151,7 +151,7 @@ for (String eCName : employmentConditionsByName.keySet()) {
         TR1__Maximum_Bill_Rate__c = 20000,
         TR1__Level__c = 'Staff',
         TR1__Primary_Matching_Requirement__c = 'xx',
-        TR1__Estimated_Start_Date__c = Date.today(),
+        TR1__Estimated_Start_Date__c = Date.today().addDays(-150),
         TR1__Estimated_End_Date__c = Date.today().addDays(150),
         TR1__State__c = 'Illinois',
         TR1__Regional_Area__c = 'Chicago Metro Area',
@@ -181,6 +181,7 @@ Date startDate = Date.today();
 Id basicRecordTypeId = Schema.SObjectType.MO_Rate__c.getRecordTypeInfosByDeveloperName().get('MO_Basic_Rate').getRecordTypeId();
 Id otherRecordTypeId = Schema.SObjectType.MO_Rate__c.getRecordTypeInfosByDeveloperName().get('MO_Other_Rate').getRecordTypeId();
 Id expenseRecordTypeId = Schema.SObjectType.MO_Rate__c.getRecordTypeInfosByDeveloperName().get('MO_Expense_Rate').getRecordTypeId();
+Id allowanceRecordTypeId = Schema.SObjectType.MO_Rate__c.getRecordTypeInfosByDeveloperName().get('MO_Allowance_Rate').getRecordTypeId();
 
 Map<Id,bullhorn__MO_Compensation_Type_Set__c> groupByRateBundleId = new Map<Id,bullhorn__MO_Compensation_Type_Set__c>();
 for (MO_Rate_Bundle__c rateBundle : rateBundles) {
@@ -222,6 +223,24 @@ for (MO_Rate_Bundle__c rateBundle : rateBundles) {
         Rate_Bundle__c = rateBundle.Id,
         Name__c = 'Expense rate'
     );
+    MO_Rate__c allowanceRate = new MO_Rate__c(
+        RecordTypeId = allowanceRecordTypeId,
+        Start_Date__c = startDate,
+        End_Date__c = startDate.addDays(100),
+        Charge_Rate__c = payRate + 10,
+        Pay_Rate__c = payRate,
+        Rate_Bundle__c = rateBundle.Id,
+        Name__c = 'Allowance rate 1'
+    );
+    MO_Rate__c allowanceRateSecond = new MO_Rate__c(
+        RecordTypeId = allowanceRecordTypeId,
+        Start_Date__c = startDate,
+        End_Date__c = startDate.addDays(100),
+        Charge_Rate__c = payRate + 11,
+        Pay_Rate__c = payRate + 1,
+        Rate_Bundle__c = rateBundle.Id,
+        Name__c = 'Allowance rate 2'
+    );
     for (Integer i = 1; i <= quantityOfRatesPerBundle; i++) {
         MO_Rate__c rate = new MO_Rate__c(
             RecordTypeId = basicRecordTypeId,
@@ -241,6 +260,8 @@ for (MO_Rate_Bundle__c rateBundle : rateBundles) {
     rates.add(otherRate);
     rates.add(otherRateGroup);
     rates.add(expenseRate);
+    rates.add(allowanceRate);
+    rates.add(allowanceRateSecond);
     payRate = 10;
 }
 insert rates;
