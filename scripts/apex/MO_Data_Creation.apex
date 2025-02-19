@@ -31,20 +31,20 @@ for (MO_Rate_Attribute_Catalogue__c catalogue : cataloguesByRecordTypeNames.valu
 }
 insert RACScopesByRACId.values();
 
+List<String> RACENameAdditions = new List<String>{
+    '01', '02', '03', '04', '05', '06', '07', '08', '09', '10'
+};
 
 List<MO_Rate_Attribute_Catalogue_Entry__c> entries = new List<MO_Rate_Attribute_Catalogue_Entry__c>();
 for (String recordTypeName : cataloguesByRecordTypeNames.keySet()) {
     Id entryRecordTypeId = [SELECT Id, Name, SobjectType FROM RecordType WHERE SobjectType = 'bullhorn__MO_Rate_Attribute_Catalogue_Entry__c' AND Name = :recordTypeName].Id;
-    entries.add(new MO_Rate_Attribute_Catalogue_Entry__c(
-        Name = recordTypeName + ' One',
-        RecordTypeId = entryRecordTypeId,
-        Catalogue__c = cataloguesByRecordTypeNames.get(recordTypeName).Id
-    ));
-    entries.add(new MO_Rate_Attribute_Catalogue_Entry__c(
-        Name = recordTypeName + ' Two',
-        RecordTypeId = entryRecordTypeId,
-        Catalogue__c = cataloguesByRecordTypeNames.get(recordTypeName).Id
-    ));
+    for (String raceNameAddition : RACENameAdditions) {
+        entries.add(new MO_Rate_Attribute_Catalogue_Entry__c(
+            Name = recordTypeName + ' ' + raceNameAddition,
+            RecordTypeId = entryRecordTypeId,
+            Catalogue__c = cataloguesByRecordTypeNames.get(recordTypeName).Id
+        ));
+    }
     entries.add(new MO_Rate_Attribute_Catalogue_Entry__c(
         Name = recordTypeName + ' Scope',
         RecordTypeId = entryRecordTypeId,
