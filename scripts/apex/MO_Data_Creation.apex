@@ -154,7 +154,8 @@ for (String eCName : employmentConditionsByName.keySet()) {
         TR1__Estimated_Start_Date__c = Date.today().addDays(-150),
         TR1__Estimated_End_Date__c = Date.today().addDays(150),
         TR1__State__c = 'Illinois',
-        TR1__Regional_Area__c = 'Chicago Metro Area',
+        TR1__State_Area__c = 'Alabama',
+        TR1__Regional_Area__c = 'Anniston-Oxford Metro Area',
         TR1__City__c = 'Chicago'
     ));
 
