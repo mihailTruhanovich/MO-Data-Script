@@ -108,7 +108,7 @@ Map<String, String> jobTitleByCompanyName = new Map<String, String>{
 Map<String, MO_Employment_Conditions__c> employmentConditionsByName = new Map<String, MO_Employment_Conditions__c>();
 Map<String, Account> accountsByNames = new Map<String, Account>();
 for (String companyName : jobTitleByCompanyName.keySet()) {
-    accountsByNames.put(companyName, new Account(Name = companyName));
+    accountsByNames.put(companyName, new Account(Name = companyName, MO_Default_Week_Ending_Day__c = 'Sunday'));
 }
 insert accountsByNames.values();
 
