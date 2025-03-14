@@ -131,6 +131,15 @@
         <recordType>bullhorn__MO_Rate_Attribute_Catalogue_Entry__c.bullhorn__Sub_Level</recordType>
     </layoutAssignments>
 
+    <layoutAssignments>
+        <layout>bullhorn__MO_Work_Schedule__c-Clock-based %28MO%29</layout>
+        <recordType>bullhorn__MO_Work_Schedule__c.bullhorn__Clock_Based</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>bullhorn__MO_Work_Schedule__c-Threshold-based %28MO%29</layout>
+        <recordType>bullhorn__MO_Work_Schedule__c.bullhorn__Threshold_Based</recordType>
+    </layoutAssignments>
+
     <tabVisibilities>
         <tab>TR1__Agreement__c</tab>
         <visibility>DefaultOn</visibility>
