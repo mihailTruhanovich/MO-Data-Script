@@ -160,5 +160,7 @@
     <tabs>MO_Configuration_Setup</tabs>
     <tabs>MO_Change_Request__c</tabs>
     <tabs>MO_Contract__c</tabs>
+    <tabs>MO_Work_Schedule__c</tabs>
+    <tabs>MO_Work_Schedule_Templates</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>
