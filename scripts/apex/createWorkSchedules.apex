@@ -32,6 +32,8 @@ for (Integer i = 1; i < 8; i++) {
     if (i < 6) { // Monday - Friday
         wsis.add(new MO_Work_Schedule_Item__c(
             bullhorn__End_Time__c = Time.newInstance(17, 0, 0, 0),
+            // bullhorn__Break_Start__c = Time.newInstance(12, 0, 0, 0),
+            // bullhorn__Break_End__c = Time.newInstance(13, 0, 0, 0),
             bullhorn__Order_Number__c = i,
             bullhorn__Start_Time__c = Time.newInstance(8, 0, 0, 0),
             bullhorn__Week_Day__c = dayByDayNumber.get(i),
@@ -50,6 +52,8 @@ for (Integer i = 1; i < 8; i++) {
     if (i == 1) { // only Monday
         wsis.add(new MO_Work_Schedule_Item__c(
             bullhorn__End_Time__c = Time.newInstance(17, 0, 0, 0),
+            // bullhorn__Break_Start__c = Time.newInstance(12, 0, 0, 0),
+            // bullhorn__Break_End__c = Time.newInstance(13, 0, 0, 0),
             bullhorn__Order_Number__c = i,
             bullhorn__Start_Time__c = Time.newInstance(8, 0, 0, 0),
             bullhorn__Week_Day__c = dayByDayNumber.get(i),
