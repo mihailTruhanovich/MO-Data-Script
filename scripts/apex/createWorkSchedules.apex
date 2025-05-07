@@ -69,3 +69,20 @@ for (Integer i = 1; i < 8; i++) {
 }
 
 insert wsis;
+
+MO_Shift_Type__c shiftType = new MO_Shift_Type__c(
+    Name = 'Standard Day',
+    Description__c = 'Description',
+    Start_Time__c = Time.newInstance(08, 0, 0, 0),
+    End_Time__c = Time.newInstance(17, 0, 0, 0)
+);
+insert shiftType;
+
+MO_Break__c br = new MO_Break__c(
+    Shift_Type__c = shiftType.Id,
+    Scheduled_Start_Time__c = Time.newInstance(12, 0, 0, 0),
+    Start_Time__c = Time.newInstance(12, 0, 0, 0),
+    Scheduled_End_Time__c = Time.newInstance(13, 0, 0, 0),
+    End_Time__c = Time.newInstance(13, 0, 0, 0)
+);
+insert br;
